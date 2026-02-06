@@ -1,6 +1,6 @@
 export default function Intro() {
   return (
-    <div className="">
+    <div>
         <h1>Hello Ryan Mason</h1>
     </div>
   );
