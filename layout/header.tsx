@@ -2,6 +2,8 @@
 import { pink } from '@mui/material/colors';
 import React from 'react';
 import { FaApple } from "react-icons/fa6";
+import Nav from './nav';
+
 const Header: React.FC = () => {
     return (
         <header 
@@ -11,19 +13,7 @@ const Header: React.FC = () => {
             <h1 
                 className="text-3xl font-semibold pr-4"
             >My Application Header</h1>
-            <nav className="bg-fuchsia-400 px-10 py-8">
-                <ul className="items-center flex gap-6 justify-center">
-                    <li className="bg-fuchsia-900 p-5">
-                        Home
-                    </li>
-                    <li className="bg-fuchsia-900 p-5">
-                        About
-                    </li>
-                    <li className="bg-fuchsia-900 p-5">
-                        Contact
-                    </li>
-                </ul>
-            </nav>
+            <Nav />
         </header>
     );
 };
