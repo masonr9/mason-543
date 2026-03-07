@@ -1,6 +1,7 @@
 /* import Image from "next/image"; */
 import Section from "@/layout/section";
-import AccordionUI from "@/layout/UI/accordion";
+import AccordionUI from "@/layout/ui/accordion";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -8,6 +9,9 @@ export default function Home() {
         <Section />
         <Section />
         <AccordionUI />
+        <Link href="/posts" className="bg-fuchsia-600 text-white px-6 py-3 rounded hover:bg-fuchsia-700">
+          View Posts
+        </Link>
     </div>
   );
 }

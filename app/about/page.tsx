@@ -1,6 +1,7 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
+import Button from "@mui/material/Button";
 
 const About: React.FC = () => {
   return (
