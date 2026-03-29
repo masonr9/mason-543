@@ -1,7 +1,7 @@
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import type { Metadata } from "next";
 import Header from "@/layout/header";
-import Footer from "@/layout/footer";
+import Footer from "@/layout/footer-old";
 import { Roboto } from 'next/font/google';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from '@/layout/theme';

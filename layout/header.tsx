@@ -1,20 +1,21 @@
 'use client';
-import { pink } from '@mui/material/colors';
 import React from 'react';
-import { FaApple } from "react-icons/fa6";
-import Nav from './nav';
+// import Branding from './branding';
+// import Nav from './nav';
+import ResponsiveAppBar from './ui/menu';
 
-const Header: React.FC = () => {
-    return (
-        <header 
-            className="bg-fuchsia-700 text-white p-10 flex items-center justify-center"
-        >
-            <FaApple size={90} color="#f46fe0" className="pr-4"></FaApple>
-            <h1 
-                className="text-3xl font-semibold pr-4"
-            >My Application Header</h1>
-            <Nav />
-        </header>
+const Header:React.FC = () => {
+  return (
+    <header className="w-full py-4 border-b border-gray-700 flex flex-row items-center justify-between px-8">
+      <ResponsiveAppBar />
+      {/*
+      <div className="flex flex-row content-end items-center">
+        <Branding />
+        <h4 className="text-2xl font-bold text-white ml-4">Task App</h4>
+      </div>
+      <Nav />
+      */}
+    </header>
     );
-};
+}
 export default Header;

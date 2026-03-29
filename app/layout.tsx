@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import React from 'react';
 import Header from "@/layout/header";
 import Aside from "@/layout/aside";
-import Footer from "@/layout/footer";
+import Footer from "@/layout/footer-old";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 

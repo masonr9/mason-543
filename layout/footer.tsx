@@ -1,10 +1,29 @@
 'use client';
-import React from 'react';
-const Footer: React.FC = () => {
-    return (
-        <footer className="bg-blue-700 text-white p-6 flex items-center justify-center">
-           <p>Bottom of the page</p>
-        </footer>
+import React, {useEffect, useState} from 'react';
+
+const Footer:React.FC = () => {
+  const [time, setTime] = useState<Date | null>(null);
+
+  useEffect(() => {
+
+
+    const tick = () => {
+      setTime(new Date());
+    };
+
+    const interval = setInterval(tick, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+
+  return (
+    <footer className="w-full bg-zinc-800 flex justify-center px-8 align-bottom ">
+      <div className="bg-green-300 p-4 rounded-md">
+        <p className="text-sm text-gray-600">
+          &copy; {time ? time.toLocaleDateString() : '—'} {time ? time.toLocaleTimeString() : '—'} Task App. All rights reserved.
+        </p>  
+      </div>
+      </footer>
     );
-};
+}
 export default Footer;
