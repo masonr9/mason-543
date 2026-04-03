@@ -1,0 +1,11 @@
+How @mui/material helps with my project:
+It provides pre-built UI components. Instead of building everything from scratch, MUI give you components such as AppBar for the nav bar, 
+Button and TextField for the forms and inputs, Card and Grid for the layout and structure, Drawer for the mobile hamburger menu and Typography
+for having consistent text styling. Without MUI, I would have to manually style all of these with CSS. MUI follows Google's material design
+system which gives my app consistent spacing, font sizes, colors and component behavior. MUI is also mobile-friendly so the components are
+designed to adapt to different screen sizes automatically. Another reason MUI helps with my project is it speeds up the development time because
+it isn't necessary to design components from scratch or write complex CSS. It also lessens the number of UI bugs. MUI components are also designed
+with accessibility in mind so it has the proper ARIA attributes and keyboard navigation support. MUI allows for me to customize the colors,
+spacing and typography. I installed MUI because my project needs a modern UI framework, consistent styling across the pages of my app, responsive
+layouts, reusable components and faster frontend development. MUI enables clean category cards, structured forms for tip submission, responsive
+navigation with both desktop and mobile, and a professional layout without the heavy CSS work.
